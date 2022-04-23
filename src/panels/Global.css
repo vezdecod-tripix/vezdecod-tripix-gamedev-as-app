@@ -1,0 +1,22 @@
+.Thinker {
+  max-height: 192px;
+}
+
+.buttonRow {
+  display: flex;
+  gap: 24px;
+}
+
+@media (max-width: 360px) {
+  .buttonRow {
+    flex-flow: column;
+    align-items: flex-end;
+  }
+}
+
+.FlexCenter {
+  display: flex;
+  flex-flow: column;
+  gap: 12px;
+  align-items: center;
+}
