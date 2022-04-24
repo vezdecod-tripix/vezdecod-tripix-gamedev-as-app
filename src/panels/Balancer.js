@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import PropTypes from 'prop-types'
 
 import { Button, Div, Panel, PanelHeader, PanelHeaderBack } from '@vkontakte/vkui'
@@ -76,7 +76,7 @@ const Balancer = props => {
     if (copyPassword.length > 8) {
       amount--;
     }
-    if ((copyPassword.split(/[!|@|.|_|-]/)).length > 5) {
+    if ((copyPassword.split(/[!@._-]/)).length > 5) {
       amount--;
     }
     if (copyPassword.match(/\d/)?.length > 6) {
@@ -98,7 +98,7 @@ const Balancer = props => {
     if (!/[A-Z]/.test(copyPassword)) {
       amount--;
     }
-    if (!(copyPassword.match(/[!|@|.|_|-]/))) {
+    if (!(copyPassword.match(/[!@._-]/))) {
       amount--;
     }
     if (!(copyPassword.match(/\d/))) {
@@ -142,7 +142,7 @@ const Balancer = props => {
 
   const lose = () => {
     if (props.bestScore < score) {
-      localStorage.setItem('worstPasswordsTripixPopularityBestScore', score)
+      localStorage.setItem('worstPasswordsTripixBalancerBestScore', score)
       props.setBestScore(score)
     }
     props.go('home')
