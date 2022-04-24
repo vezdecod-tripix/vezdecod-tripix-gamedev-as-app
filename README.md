@@ -1,3 +1,12 @@
+## Ссылка приложение
+[Играть](https://vk.com/app8146639)
+
+## Figma:
+https://www.figma.com/file/tVvf5nby3iclprUGvf9H8V/Vezdekode?node-id=65%3A6556
+
+## Дизайн игры 3 в ряд:
+![image](https://user-images.githubusercontent.com/78375529/164960232-570b04c7-b148-4810-ad5e-5d5e4d30664d.png)
+
 [<img width="134" src="https://vk.com/images/apps/mini_apps/vk_mini_apps_logo.svg">](https://vk.com/services)
 
 # Create VK Mini App [![npm][npm]][npm-url] [![deps][deps]][deps-url]
