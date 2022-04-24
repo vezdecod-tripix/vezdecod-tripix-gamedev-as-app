@@ -1,0 +1,58 @@
+.Actions {
+  display: flex;
+  gap: 16px;
+}
+
+.BalancerPassword {
+  display: flex;
+  justify-content: center;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.Lever {
+  padding-top: 256px;
+  position: relative;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.Lever > span {
+  z-index: 2;
+  position: absolute;
+}
+
+.Lever > .Cats,
+.Lever > .Frogs {
+  position: absolute;
+  bottom: 0;
+  transition: 0.2s ease-in-out;
+}
+
+.Lever > .Cats {
+  display: flex;
+  flex-flow: column;
+  transform: translate(92px, -118px);
+}
+
+.Lever > .Frogs {
+  display: flex;
+  flex-flow: column;
+  transform: translate(-92px, -118px);
+}
+
+img[alt='cat'], img[alt='frog'] {
+  margin-top: -16px;
+}
+
+.LeverLever {
+  transform: rotate(0deg);
+  transition: 0.2s ease-in-out;
+}
+
+.LeverTriangle {
+  z-index: 1;
+  margin-top: -46px;
+}
